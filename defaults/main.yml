@@ -9,3 +9,6 @@
 # the ipaddress of the receiving rsyslog server.
 # Not setting this variable will not forward logs.
 # rsyslog_remote: server1.example.com
+
+# template to use for /etc/rsyslog.conf
+rsyslog_conf_template: rsyslog.conf.j2

@@ -15,7 +15,7 @@
 
 - name: configuring rsyslog
   template:
-    src: rsyslog.conf.j2
+    src: "{{ rsyslog_conf_template }}"
     dest: /etc/rsyslog.conf
   notify:
     - restart rsyslog
